@@ -1,0 +1,9 @@
+<h1>WELCOME TO THE LONGEST WORD-GAME</h1>
+<h1><%= @grid.join(" ")%></h1>
+<form action="/score">
+  <label for="question">What's your best shot !!!</label>
+  <input type="text" id="query" name="query" placeholder="Enter here">
+  <input type="submit" value="Enter!">
+  <input type="hidden" id="grid" name="grid" value="<%=@grid%>">
+  <script>console.log("hello")</script>
+</form>
