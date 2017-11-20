@@ -1,9 +1,9 @@
-<h1>WELCOME TO THE LONGEST WORD-GAME</h1>
-<h1><%= @grid.join(" ")%></h1>
-<form action="/score">
+<h1 class="display-1">THE LONGEST WORD</h1>
+<h1 id="display-2"><%= @grid.join(" ")%></h1>
+<form action="/score" class="form-group">
   <label for="question">What's your best shot !!!</label>
-  <input type="text" id="query" name="query" placeholder="Enter here">
-  <input type="submit" value="Enter!">
+  <input type="text" id="query" class="form-group" name="query" placeholder="Enter here">
+  <input type="submit" value="Enter!" class="btn btn-primary">
   <input type="hidden" id="grid" name="grid" value="<%=@grid%>">
   <script>console.log("hello")</script>
 </form>
